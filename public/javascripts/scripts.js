@@ -31,7 +31,7 @@ $(document).ready(function (){
 				}
 			});
 			content += '</div>';
-			$('#node1-status p').html('Last updated at: ' + pens[0][0].timestamp);
+			$('#node1-status p').html('Last updated at: <b>' + pens[0][0].timestamp + '</b>');
 			var node1 = {
 				trigger: 'hover',
 				placement: 'bottom',

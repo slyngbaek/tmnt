@@ -4,9 +4,7 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
-  , redis = require('redis');
-  client = redis.createClient();
+  , routes = require('./routes');
 
 var app = module.exports = express.createServer();
 
@@ -14,6 +12,7 @@ var app = module.exports = express.createServer();
 
 app.configure(function(){
   app.set('views', __dirname + '/views');
+  app.set('models', __dirname + '/models');
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
@@ -32,7 +31,8 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
-app.post('/', routes.data);
+app.post('/data', routes.data);
+app.get('/about', routes.about);
 
 app.listen(80);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

@@ -1,0 +1,20 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.graph-container {
+	margin: 20px 0;
+}
+
+.graph-container .caption {
+	text-align: center;
+}
+
+.popover-content .btn {
+	height: 35px;
+}
+
+.row-fluid#status p {
+	margin-top: 10px;
+}

@@ -29,10 +29,10 @@ $(document).ready(function (){
 			var content = '<div class="row-fluid">';
 			$.each(pens, function(index, value){
 				if (pens[index][0].t3 >= 25 && pens[index][0].t3 <= 35) {
-					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-success">' + Math.round(pens[0][0].t3*100)/100 + '&deg;C</button></div>';
+					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-success">' + Math.round(pens[index][0].t3*100)/100 + '&deg;C</button></div>';
 				}
 				else {
-					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-danger">' + pens[0][0].t3 + ' &deg;C</button></p>';
+					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-danger">' + Math.round(pens[index][0].t3*100)/100 + '&deg;C</button></p>';
 					$('#node1-status button').attr('class', 'btn btn-danger');
 					$('#node1-status button').html('Status Bad');
 				}
@@ -48,7 +48,7 @@ $(document).ready(function (){
 			$('#node1-status').popover(node1);
 		}
 		else {
-			$('#node2-status p').html('No Data Found');
+			$('#node1-status p').html('No Data Found');
 		}
 
 		// Node 1: Pen 0
@@ -155,10 +155,10 @@ $(document).ready(function (){
 			var content = '<div class="row-fluid">';
 			$.each(pens, function(index, value){
 				if (pens[index][0].t3 >= 25 && pens[index][0].t3 <= 35) {
-					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-success">' + Math.round(pens[0][0].t3*100)/100 + '&deg;C</button></div>';
+					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-success">' + Math.round(pens[index][0].t3*100)/100 + '&deg;C</button></div>';
 				}
 				else {
-					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-danger">' + pens[0][0].t3 + ' &deg;C</button></p>';
+					content += '<div class="span3" align="center">Pen ' + index + '<button class="btn btn-danger">' + Math.round(pens[index][0].t3*100)/100 + '&deg;C</button></p>';
 					$('#node2-status button').attr('class', 'btn btn-danger');
 					$('#node2-status button').html('Status Bad');
 				}

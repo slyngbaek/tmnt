@@ -1,1 +1,52 @@
 Express server listening on port 80 in development mode
+Express server listening on port 80 in development mode
+
+/home/slyngbae/tmnt/routes/data.js:22
+				throw err;
+          ^
+Error: No database selected
+    at Function._packetToUserObject (/home/slyngbae/tmnt/node_modules/mysql/lib/client.js:387:11)
+    at Query._handlePacket (/home/slyngbae/tmnt/node_modules/mysql/lib/query.js:33:33)
+    at Client._handlePacket (/home/slyngbae/tmnt/node_modules/mysql/lib/client.js:312:14)
+    at Parser.<anonymous> (native)
+    at Parser.emit (events.js:67:17)
+    at /home/slyngbae/tmnt/node_modules/mysql/lib/parser.js:71:14
+    at Parser.write (/home/slyngbae/tmnt/node_modules/mysql/lib/parser.js:576:7)
+    at Socket.<anonymous> (native)
+    at Socket.emit (events.js:67:17)
+    at TCP.onread (net.js:347:14)
+Express server listening on port 80 in development mode
+Express server listening on port 80 in development mode
+
+/home/slyngbae/tmnt/routes/data.js:22
+				throw err;
+          ^
+Error: No database selected
+    at Function._packetToUserObject (/home/slyngbae/tmnt/node_modules/mysql/lib/client.js:387:11)
+    at Query._handlePacket (/home/slyngbae/tmnt/node_modules/mysql/lib/query.js:33:33)
+    at Client._handlePacket (/home/slyngbae/tmnt/node_modules/mysql/lib/client.js:312:14)
+    at Parser.<anonymous> (native)
+    at Parser.emit (events.js:67:17)
+    at /home/slyngbae/tmnt/node_modules/mysql/lib/parser.js:71:14
+    at Parser.write (/home/slyngbae/tmnt/node_modules/mysql/lib/parser.js:576:7)
+    at Socket.<anonymous> (native)
+    at Socket.emit (events.js:67:17)
+    at TCP.onread (net.js:347:14)
+Express server listening on port 80 in development mode
+
+/home/slyngbae/tmnt/routes/data.js:22
+				throw err;
+          ^
+Error: No database selected
+    at Function._packetToUserObject (/home/slyngbae/tmnt/node_modules/mysql/lib/client.js:387:11)
+    at Query._handlePacket (/home/slyngbae/tmnt/node_modules/mysql/lib/query.js:33:33)
+    at Client._handlePacket (/home/slyngbae/tmnt/node_modules/mysql/lib/client.js:312:14)
+    at Parser.<anonymous> (native)
+    at Parser.emit (events.js:67:17)
+    at /home/slyngbae/tmnt/node_modules/mysql/lib/parser.js:71:14
+    at Parser.write (/home/slyngbae/tmnt/node_modules/mysql/lib/parser.js:576:7)
+    at Socket.<anonymous> (native)
+    at Socket.emit (events.js:67:17)
+    at TCP.onread (net.js:347:14)
+Express server listening on port 80 in development mode
+Express server listening on port 80 in development mode

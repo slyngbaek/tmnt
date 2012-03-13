@@ -13,7 +13,7 @@ exports.data = function (req, res){
 		client.exec.query(
 			//DATE_FORMAT(timestamp, \'%Y-%m-%d %k:%i\')
 			'SELECT pen_num, DATE_FORMAT(timestamp, \'%b-%d-%Y %l:%i %p\') AS timestamp, t0, t1, t2, t3 ' +
-			'FROM pens ' +
+			'FROM tmnt.pens ' +
 			'WHERE node_num = ' + node_num + ' AND timestamp >= CURDATE()-1 ' +
 			'ORDER BY pen_num, timestamp',
 			function(err, results, fields){
@@ -33,7 +33,7 @@ exports.data = function (req, res){
 		client.exec.query(
 			//DATE_FORMAT(timestamp, \'%Y-%m-%d %k:%i\')
 			'SELECT DATE_FORMAT(timestamp, \'%b-%d-%Y %l:%i %p\') AS timestamp, humidity, light0, light1 ' +
-			'FROM nodes ' +
+			'FROM tmnt.nodes ' +
 			'WHERE node_num = ' + node_num + ' AND timestamp >= CURDATE()-1 ' +
 			'ORDER BY timestamp',
 			function(err, results, fields){

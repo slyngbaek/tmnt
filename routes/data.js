@@ -14,7 +14,7 @@ exports.data = function (req, res){
 			//DATE_FORMAT(timestamp, \'%Y-%m-%d %k:%i\')
 			'SELECT pen_num, DATE_FORMAT(timestamp, \'%b-%d-%Y %l:%i %p\') AS timestamp, t0, t1, t2, t3 ' +
 			'FROM tmnt.pens ' +
-			'WHERE node_num = ' + node_num + ' AND timestamp >= CURDATE()-1 ' +
+			'WHERE node_num = ' + node_num + ' AND TIMESTAMPDIFF(HOUR, timestamp, NOW()) <= 24 ' +
 			'ORDER BY pen_num, timestamp',
 			function(err, results, fields){
 			
@@ -34,7 +34,7 @@ exports.data = function (req, res){
 			//DATE_FORMAT(timestamp, \'%Y-%m-%d %k:%i\')
 			'SELECT DATE_FORMAT(timestamp, \'%b-%d-%Y %l:%i %p\') AS timestamp, humidity, light0, light1 ' +
 			'FROM tmnt.nodes ' +
-			'WHERE node_num = ' + node_num + ' AND timestamp >= CURDATE()-1 ' +
+			'WHERE node_num = ' + node_num + ' AND TIMESTAMPDIFF(HOUR, timestamp, NOW()) <= 24 ' +
 			'ORDER BY timestamp',
 			function(err, results, fields){
 			
